@@ -4,7 +4,7 @@ from pygame.math import Vector2
 from collections import dequ
 
 from model import Linear_QNet, QTrainer
-from helper import plot
+from graph import plot
 
 MAX_MEMORY = 100_000
 BATCH_SIZE = 1000
