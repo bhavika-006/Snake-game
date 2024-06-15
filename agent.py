@@ -63,7 +63,7 @@ class Agent:
                 main_game.fruit.pos.y < main_game.snake.body[0].y,  # food up
                 main_game.fruit.pos.y > main_game.snake.body[0].y  # food down
                 ]
-        return np.array(state, dtype = int)
+        return torch.tensor(state, dtype=torch.float)
 
     def remember(self, state, action, reward, next_state, done):
         self.memory.append((state, action, reward, next_state, done))
